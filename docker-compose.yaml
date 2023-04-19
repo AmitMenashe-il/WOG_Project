@@ -5,8 +5,8 @@ services:
     image: amitmenashe/wog_main_img
     ports:
       - 80:5000
-    environment:
-      PYTHONPATH: /guessgame:/memorygame:/crgame
+    env_file:
+     - live.env
     volumes:
       - guessgame_vol:/guessgame/
       - memorygame_vol:/memorygame/
