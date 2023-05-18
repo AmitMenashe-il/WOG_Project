@@ -6,7 +6,7 @@ services:
     ports:
       - 80:5000
     env_file:
-     - live.env
+     - wog.env
     volumes:
       - guessgame_vol:/guessgame/
       - memorygame_vol:/memorygame/
@@ -45,7 +45,7 @@ services:
     networks:
       - wog_network
     env_file:
-     - db.env
+     - wog.env
     
 volumes:
   guessgame_vol:
